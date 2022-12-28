@@ -1,0 +1,75 @@
+ <!doctype html>
+        <html>
+          <head>
+            <title>Booki</title>
+            <!--kit font awesome-->
+           <script src="https://kit.fontawesome.com/b4aa609cc9.js" crossorigin="anonymous"></script>
+            <!--fichier style.css-->
+           <link rel="stylesheet" href="./css/style.css">
+           <!--police raleway en 400,500,600,700-->
+           <link rel="stylesheet" href="mystyle.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+            <style>
+              @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+            </style>
+
+          </head>
+
+          <body>
+           
+            <header>
+              <!-- menu -->
+              <nav class="navMenu">
+                <img id="logo" src="./images/logo/Booki@3x.png" alt="logo">
+                <ul >
+                  <li><a href="#ancreHebergement"> Hébergements</a></li>
+                  <li><a href="#ancreActivites"> Activités</a></li>
+                </ul>
+              </nav>
+            </header>
+
+            <!-- Main -->
+            <main>
+              <!-- section recherche -->
+              <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+              <p>En plein centre-ville ou en pleine nature</p>
+              
+                <form class="recherche" method="get" action="">
+                  <i id="icoLocation" class="fa-solid fa-location-dot"></i>
+                  <input class="choixLieu" type="search" placeholder="Marseille, France">
+                  <input class="btnRecherche" type="submit" value="Rechercher">
+                </form>
+              </section>
+
+              <!-- section filtre -->
+              <br>
+              
+              <section class="filtre"> 
+                <h2>Filtres</h2>
+                <div class="chaqueFiltre"><i class="fas fa-money-bill-wave"></i><span>Economique</span></div>
+                <div class="chaqueFiltre"><i class="fa-solid fa-person"></i><span>Familial</span></div>
+                <div class="chaqueFiltre"><i class="fas fa-heart"></i><span>Romantique</span></div>
+                <div class="chaqueFiltre"><i class="fas fa-dog"></i><span>Animaux autorisés</span></div>
+              </section>
+              <div>
+                <p><i id="icoInfo" class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+              </div>
+            
+              <!-- section hébergements + les plus populaires -->
+              <section id="ancreHebergement" class="hebergement">
+
+              </section>
+              <!-- section activités à Marseille -->
+              <section id="ancreActivites" class="activités">
+
+              </section>
+            </main>
+            <!-- footer -->
+            <footer>
+
+            </footer>
+          </body>
+        </html>
+        

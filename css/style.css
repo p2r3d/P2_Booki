@@ -1,0 +1,141 @@
+body {  
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+
+}
+h1 {
+  font-weight: 700;
+  font-size: 22px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* header */
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  
+}
+
+/* logo */
+nav img {
+  width: 61.09px;
+  height: 19px;
+}
+
+.navMenu ul {
+  display: flex;
+  list-style: none; 
+  flex-wrap: wrap;
+}
+
+.navMenu a {
+  text-decoration: none;
+  padding: 23px;
+  color: black;
+}
+
+.navMenu li :hover {
+  border-top: solid;
+  color: #0065FC;
+  border-color: #0065FC;
+}
+
+
+
+/* Section Recherche */
+
+.recherche {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px;
+}
+
+/* icone localisation de la partie recherche */
+#icoLocation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 49px;
+  background:#F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px 0px 0px 15px;
+}
+
+
+/* partie Recherche : choix du lieu */
+.choixLieu {
+  background-color: #FFFFFF ;
+  border: 0;
+  outline: 0; /*supprime l'encadré du choix du lieu*/
+  font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+ }
+
+.choixLieu::placeholder {
+  color: black; 
+}
+
+/* bouton submit de la partie recherche */
+.btnRecherche {
+  width: 132px;
+  height: 49px;
+  background: #0065FC;
+  border: 1px solid #0065FC;
+  color: #FFFFFF;
+  border-radius: 0px 15px 15px 0px;
+}
+
+/* Section Filtres */
+
+.filtre {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #FFFFFF;
+}
+
+.filtre :hover {
+  background: #DEEBFF;
+}
+
+.chaqueFiltre {
+  border: 2px solid #D9D9D9;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
+  padding: 1px 10px ;
+}
+
+.chaqueFiltre i {
+  color: #0065FC;
+  padding:10px;
+}
+
+/* icone info de la partie filtre */
+#icoInfo {
+  border: 1px solid #D9D9D9;
+  border-radius: 15px;
+  height: 24px;
+  width: 24px;
+  text-align:center;
+  font-size: 14px;
+  color:#0065FC;
+}
