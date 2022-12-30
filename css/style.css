@@ -1,9 +1,11 @@
 body {  
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: 'Raleway', sans-serif;
-  color: black;
-
+  color: black; 
+  margin: 0;
+  padding: 0 3.5%;
 }
+
 h1 {
   font-weight: 700;
   font-size: 22px;
@@ -18,26 +20,30 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-  align-items: center;
+  align-items:center;
   flex-wrap: wrap; 
-  
+  max-width: 1440px;
+
 }
 
-/* logo */
+/* logo Booki*/
 nav img {
   width: 61.09px;
   height: 19px;
 }
 
+/* liens du menu */
 .navMenu ul {
   display: flex;
+  justify-content: center;
   list-style: none; 
   flex-wrap: wrap;
+  width: 50%;
 }
 
 .navMenu a {
   text-decoration: none;
-  padding: 23px;
+  padding: 15px;
   color: black;
 }
 
@@ -49,8 +55,7 @@ nav img {
 
 
 
-/* Section Recherche */
-
+/* Section recherche */
 .recherche {
   display: flex;
   flex-direction: row;
@@ -58,46 +63,52 @@ nav img {
   justify-content: left;
   align-items: center;
   background: #FFFFFF;
-  border: 1px solid #F2F2F2;
-  border-radius: 15px;
-}
-
-/* icone localisation de la partie recherche */
-#icoLocation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 49px;
-  background:#F2F2F2;
-  border: 1px solid #F2F2F2;
-  border-radius: 15px 0px 0px 15px;
-}
-
-
-/* partie Recherche : choix du lieu */
-.choixLieu {
-  background-color: #FFFFFF ;
   border: 0;
-  outline: 0; /*supprime l'encadré du choix du lieu*/
-  font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 18px;
-    color: black;
- }
+  width: 75%;
+  
+}
+/* icone localisation de la partie recherche */
+.recherche i {
+  border-radius: 1rem 0 0 1rem;
+  padding: 1.2rem 1rem;
+  border: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
+  font-size: 14px ;
+}
 
-.choixLieu::placeholder {
-  color: black; 
+/* choix du lieu de la partie recherche */
+.recherche input {
+  outline: 0;/*supprime l'encadré du choix du lieu*/
+  padding: 1rem 0rem;
+  width: 25%;
+  border: 1px solid #F2F2F2;
+  color: #000000;
+}
+
+/* pq ne fonctionne pas ?
+.recherche input::placeholder {
+  color: black;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 18px;
+}*/
+
+#rechLieu {
+  color: black;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /* bouton submit de la partie recherche */
-.btnRecherche {
-  width: 132px;
-  height: 49px;
+.recherche button {
   background: #0065FC;
-  border: 1px solid #0065FC;
-  color: #FFFFFF;
-  border-radius: 0px 15px 15px 0px;
+    border: 1px solid #0065FC;
+    color: #FFFFFF;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1rem;
 }
 
 /* Section Filtres */
@@ -139,3 +150,4 @@ nav img {
   font-size: 14px;
   color:#0065FC;
 }
+
