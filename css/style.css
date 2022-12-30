@@ -113,7 +113,7 @@ nav img {
 
 /* Section Filtres */
 
-.filtre {
+.filtres {
   display: flex;
   justify-content:flex-start;
   align-items: center;
@@ -122,7 +122,7 @@ nav img {
   background: #FFFFFF;
 }
 
-.filtre :hover {
+.filtres :hover {
   background: #DEEBFF;
 }
 
@@ -140,14 +140,24 @@ nav img {
   padding:10px;
 }
 
-/* icone info de la partie filtre */
-#icoInfo {
-  border: 1px solid #D9D9D9;
-  border-radius: 15px;
-  height: 24px;
-  width: 24px;
-  text-align:center;
-  font-size: 14px;
-  color:#0065FC;
+/* Section message info  */
+.infoMessage {
+  display: flex;
+  align-items: center;
+  gap:1rem
 }
+.infoMessage i {
+  border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    font-size: 0.8rem;
+}
+
+/* section hébergements+les plus populaires */
+
 

@@ -35,26 +35,29 @@
               <!-- section Recherche -->
               <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
               <p>En plein centre-ville ou en pleine nature</p>
-                <div class="recherche">
-                  <i id="icoLocation" class="fa-solid fa-location-dot"></i>
-                  <input id="rechLieu" type="text" placeholder="Marseille, France"></input>
-                  <button>Rechercher</button>
-                </div>
-                <br>
-              </section>
+                
+              <form class="recherche" action="#">
+                <i id="icoLocation" class="fa-solid fa-location-dot"></i>
+                <input id="rechLieu" type="text" placeholder="Marseille, France"></input>
+                <button>Rechercher</button>
+              </form>
 
               <!-- section Filtres -->
               <br>
-              
-              <section class="filtre"> 
+              <section class="filtres"> 
                 <h2>Filtres</h2>
-                <div class="chaqueFiltre"><i class="fas fa-money-bill-wave"></i><span>Economique</span></div>
-                <div class="chaqueFiltre"><i class="fa-solid fa-person"></i><span>Familial</span></div>
-                <div class="chaqueFiltre"><i class="fas fa-heart"></i><span>Romantique</span></div>
-                <div class="chaqueFiltre"><i class="fas fa-dog"></i><span>Animaux autorisés</span></div>
+                <div class="chaqueFiltre">
+                  <i class="fas fa-money-bill-wave"></i><span>Économique</span></div>
+                <div class="chaqueFiltre">
+                  <i class="fa-solid fa-person"></i><span>Familial</span></div>
+                <div class="chaqueFiltre">
+                  <i class="fas fa-heart"></i><span>Romantique</span></div>
+                <div class="chaqueFiltre">
+                  <i class="fas fa-dog"></i><span>Animaux autorisés</span></div>
               </section>
-              <div>
-                <p><i id="icoInfo" class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+              <div class="infoMessage">
+                <i class="fa-solid fa-info"></i>
+                <p> Plus de 500 logements sont disponibles dans cette ville</p>
               </div>
             
               <!-- section hébergements + les plus populaires -->
