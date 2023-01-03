@@ -31,7 +31,6 @@ h3{
   padding-left: 10px;
 }
 
-
 /* header */
 .navMenu {
   display: flex;
@@ -315,44 +314,47 @@ margin: 0;
 /* Section Activités à Marseille */
 .activites {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-basis: 100%;
-  height: 425px;
-  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:10px;
 }
 
 .activites .activite {
-display: flex;
-flex-direction: column;
-width: 25%;
-height: 425px;
-border-radius: 20px;
-box-shadow: 0 0 16px #b4b1b1;
-}
-
-.activite .imageActivite{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 20px 20px 0 0;
-  width: 100%;
-  height: 425px;
+  width: 302px;
+  box-shadow: 0 0 16px #b4b1b1;
+  border-radius: 20px;
 }
 
-.texteActivite {
- padding-left: 10px;
+.activite .imageActivite {
+  display: flex;
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 20px 0 0;
+  height: 380px;
+  object-fit:cover;
 }
 
 /* Section Footer */
 .liensFooter {
   display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  width: 100%;
-  height: 125px;
-  background-color:#F2F2F2;
-  margin-top: 50px;
-  padding-bottom: 45px;
-  gap: 70px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F2F2F2;
+  margin: 30px 0 ;
+}
+
+.colFooter{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.colFooter a{
+  text-decoration: none;
+  color:inherit
+}
+.colFooter li {
+  list-style: none;
 }
