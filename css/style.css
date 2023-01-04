@@ -1,8 +1,8 @@
 
-* {
+*{
   font-family: "Raleway", "sans-serif";
   box-sizing: border-box;
-  max-width: 1440px;
+  /*max-width: 1440px;*/
 }
 body {
   margin: 0;
@@ -338,22 +338,24 @@ margin: 0;
 /* Section Footer */
 .liensFooter {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content:space-around;
   align-items: center;
   flex-wrap: wrap;
   background: #F2F2F2;
-  margin: 30px 0 ;
+  margin-top: 25px;
 }
 
-.colFooter{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.colFooter p {
+  font-weight: 700;
+  font-size: 18px;
 }
-
-.colFooter a{
+.colFooter ul{
+  padding: 0;
+}
+.colFooter a {
   text-decoration: none;
-  color:inherit
+  color: #000000;
 }
 .colFooter li {
   list-style: none;
