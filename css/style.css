@@ -216,6 +216,13 @@ h4 {
   height: 14rem;
 }
 
+#headerHebergement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.1rem;
+  color: #0065fc;
+}
 .hebergement .carte .imageHebergement {
   display: flex;
   width: 100%;
@@ -249,11 +256,11 @@ h4 {
   background-color: #F2F2F2;
 }
  
-#headerPopulaires, #headerHebergement {
+#headerPopulaires {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 1.2rem;
   color:#0065fc;
   }
     
@@ -390,41 +397,21 @@ object-fit: cover;
   padding: 0.2rem;
 }
 
+/*********************************************/
+/*taille écran tablette (>=768px et <=992px) */
 
-
-/*taille écran mobile (inférieur à 768px) */
-
-@media screen and (max-width:768px) {
-  .body{
-    margin: 0;
-    padding: 0;
+@media screen and (max-width:992px) {
+  /*section navigation*/
+  .navMenu {
+    border: 1px solid red;
+  }
+     
+  /*section Filtres */
+  .filtres {
+    gap: 0.8rem;
   }
 
-/*section navigation */
-.navMenu {
-  flex-direction: column;
-  margin: 0;
-}
-.navMenu  #logo {
-  margin-right: 0;
-}
-.navMenu ul {
-  padding: 0;
-}
-
-.navMenu a {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-/*section Filtres */
-.filtres {
-  gap: 0.5rem;
-}
-
-/*section recherche */
+  /*section recherche */
   .texteIconeRecherche {
     display: none;
   }
@@ -437,66 +424,161 @@ object-fit: cover;
     padding: 0;
   }
 
-/* section hébergement */
-    .cartesHebergements {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .hebergement {
-      order: 1;     /*passe "les plus polulaires" au-dessus de "hébergement" */
-      background: #FFFFFF;
-      margin-bottom: 2rem;
+  /* section hébergement*/
+  .cartesHebergements {
+    display: flex;
+    flex-direction: column;
+  }
+
+    /* section populaires */
+  .populaires {
+    border-radius: 0;
+  }
+
+  .populaires .cartes {
+    padding-bottom: 1rem;
+  }
+
+  .populaires .carte {
+    flex-basis: 30%;
+  }
+
+  /* section activités à Marseille*/
+  .activites {
+    display: flex;
+    padding: 0;
+  }
+
+  .activites .activite {
+    width: 23%;
+  }
+
+  .activite .imageActivite {
+    height: 16.8rem;
+  }
+
+  /* section footer */
+  .liensFooter {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+  }
+
+  .colFooter p {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+}
+/******************************************/
+/*taille écran mobile (inférieur à 768px) */
+
+@media screen and (max-width:768px) {
+  .body{
+    margin: 0;
+    padding: 0;
     }
 
-    .hebergement .cartes {
-      flex-direction: column;
-      align-items: center;
-      padding: 0 1rem;
-    }
+  /*section navigation */
+  .navMenu {
+    flex-direction: column;
+    margin: 0;
+    border: 1px solid green;
+  }
+  .navMenu  #logo {
+    margin-right: 0;
+  }
+  .navMenu ul {
+    padding: 0;
+  }
 
-    .hebergement .cartes .carte {
-      width: 100%;
-    }
+  .navMenu a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* section populaires */
+  /*section Filtres */
+  .filtres {
+    gap: 0.5rem;
+  }
+
+  /*section recherche */
+  .texteIconeRecherche {
+    display: none;
+  }
+
+  .fas.fa-search {
+    display: inline;
+  }
+
+  .recherche button {
+    padding: 0;
+  }
+
+  /* section hébergement */
+  .cartesHebergements {
+    display: flex;
+    flex-direction: column;
+    }
+    
+  .hebergement {
+    order: 1;     /*passe "les plus polulaires" au-dessus de "hébergement" */
+    background: #FFFFFF;
+    margin-bottom: 2rem;
+  }
+
+  .hebergement .cartes {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .hebergement .cartes .carte {
+    width: 100%;
+  }
+
+  /* section populaires */
   .populaires {
     border-radius: 0; 
-    }
-.populaires .cartes{
-  padding-bottom: 1rem;
-}
-    #afficherPlus {
-      display: none;
-    }
-
-/* section activités à Marseille*/
-.activites {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 1.2rem;
   }
 
-.activites .activite {
-  width: 100%;
+  .populaires .cartes {
+    padding-bottom: 1rem;
+  }
+      
+  #afficherPlus {
+    display: none;
   }
 
-.activite .imageActivite {
-
-height: 10rem;
+  /* section activités à Marseille*/
+  .activites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.2rem;
   }
 
-/* section footer */
-.liensFooter {
-  display: flex;
-  flex-direction: column;
-  padding: 1.2rem;
+  .activites .activite {
+    width: 100%;
+  }
+
+  .activite .imageActivite {
+    height: 10rem;
+  }
+
+  /* section footer */
+  .liensFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+
+  .colFooter p {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
 }
 
-.colFooter p {
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-}
