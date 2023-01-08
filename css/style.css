@@ -87,12 +87,11 @@ h4 {
 /* icone localisation de la partie recherche */
 .recherche i {
   border-radius: 15px 0 0 15px;
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
   background-color: #F2F2F2;
-  font-size: 1rem;
+  font-size: 1.1rem;
   height: 3rem;
   padding: 1rem 1rem;
-  
 }
 
 /* choix du lieu de la partie recherche */
@@ -104,7 +103,6 @@ h4 {
 }
 
 #rechLieu {
-  color: black;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 1.1rem;
@@ -116,6 +114,7 @@ h4 {
   color: #FFFFFF;
   border-radius: 0 1rem 1rem 0;
   height: 3rem;
+  padding:14px 16px;
 }
 
 .texteIconeRecherche{
@@ -132,14 +131,6 @@ h4 {
   display: none;
 }
 
-@media screen and (max-width:768px) {
-  .texteIconeRecherche {
-    display: none;
-  }
-  .fas.fa-search {
-    display: inline;
-  }
-  }
 
 /* Section Filtres */
 .filtres {
@@ -147,7 +138,7 @@ h4 {
   justify-content:flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap:1.5rem;
+  gap: 1.5rem;
   background: #FFFFFF;
 }
 
@@ -203,7 +194,7 @@ h4 {
   flex-basis: 66%;
   border-radius: 1.6rem;
   background-color: #F2F2F2;
-  padding: 0 1.2rem;
+  
   }
 
 .hebergement .cartes {
@@ -211,6 +202,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   gap:20px;
+  padding: 0.5rem 1.2rem;
 }
 
 .hebergement .carte {
@@ -248,38 +240,26 @@ h4 {
   flex-basis: 90%;
   margin: 0;
 }
+
+
 /*Partie "les plus populaires"*/
 .populaires {
   flex-basis: 33%;
   border-radius: 1.6rem;
   background-color: #F2F2F2;
-  padding: 0 2.3rem 0 2.3rem;
 }
  
-.headerPopulaires{
+#headerPopulaires, #headerHebergement {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.headerPopulaires {
-  
-  color: #0065FC;
- }
-/*taille petit écran*/
-@media screen and (max-width:768px) {
-  .cartesHebergements{
-    display: flex;
-    flex-direction: column;
-  }
-    .hebergement {
-      order:1;   /*passe "les plus polulaires" au-dessus de "hébergement" */
+  padding: 0 2rem;
+  color:#0065fc;
   }
     
-}  
-
 /*conteneur des cartes populaires*/
 .populaires .cartes {
-  padding: 12px 0 30px 0;
+  padding: 0 1.2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
@@ -348,6 +328,9 @@ object-fit: cover;
   flex-wrap: wrap;
   color: #F2F2F2;
 }
+#afficherPlus {
+  padding: 0 2rem;
+}
 
 /* Section Activités à Marseille */
 .activites {
@@ -363,6 +346,12 @@ object-fit: cover;
   width: 23%;
   box-shadow: 0 0 1rem #b4b1b1;
   border-radius: 1.25rem;
+}
+#headerActivites {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 rem;
 }
 
 .activite .imageActivite {
@@ -398,4 +387,116 @@ object-fit: cover;
 }
 .colFooter li {
   list-style: none;
+  padding: 0.2rem;
+}
+
+
+
+/*taille écran mobile (inférieur à 768px) */
+
+@media screen and (max-width:768px) {
+  .body{
+    margin: 0;
+    padding: 0;
+  }
+
+/*section navigation */
+.navMenu {
+  flex-direction: column;
+  margin: 0;
+}
+.navMenu  #logo {
+  margin-right: 0;
+}
+.navMenu ul {
+  padding: 0;
+}
+
+.navMenu a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*section Filtres */
+.filtres {
+  gap: 0.5rem;
+}
+
+/*section recherche */
+  .texteIconeRecherche {
+    display: none;
+  }
+
+  .fas.fa-search {
+    display: inline;
+  }
+
+  .recherche button {
+    padding: 0;
+  }
+
+/* section hébergement */
+    .cartesHebergements {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .hebergement {
+      order: 1;     /*passe "les plus polulaires" au-dessus de "hébergement" */
+      background: #FFFFFF;
+      margin-bottom: 2rem;
+    }
+
+    .hebergement .cartes {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    .hebergement .cartes .carte {
+      width: 100%;
+    }
+
+/* section populaires */
+  .populaires {
+    border-radius: 0; 
+    }
+.populaires .cartes{
+  padding-bottom: 1rem;
+}
+    #afficherPlus {
+      display: none;
+    }
+
+/* section activités à Marseille*/
+.activites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.2rem;
+  }
+
+.activites .activite {
+  width: 100%;
+  }
+
+.activite .imageActivite {
+
+height: 10rem;
+  }
+
+/* section footer */
+.liensFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
+.colFooter p {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
 }
