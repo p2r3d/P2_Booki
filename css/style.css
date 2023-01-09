@@ -6,7 +6,7 @@
 }
 body {
   max-width: 1400px;
-  margin: 0.7rem 2rem;
+  margin: 0.1rem 2rem;
   background-color: #FFFFFF;
 }
 
@@ -34,7 +34,7 @@ h4 {
   padding-left: 0.6rem;
 }
 
-/* header */
+/***** header ******/
 .navMenu {
   display: flex;
   justify-content:space-between;
@@ -67,14 +67,12 @@ h4 {
   border-top: 2px solid #0065FC;
 }
 
-@media screen and (max-width:800px) {
-    .navMenu a:hover {
-    border-bottom: 2px solid #0065FC;
-    border-top:transparent;
-  }
+/***** intro ******/
+.intro {
+  padding-top: 1rem;
 }
 
-/* Section recherche */
+/*****  Section recherche ******/
 .recherche {
   display: flex;
   flex-wrap: wrap;
@@ -106,6 +104,7 @@ h4 {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 1.1rem;
+  color:#000000;
 }
 /* bouton submit de la partie recherche */
 .recherche button {
@@ -131,8 +130,7 @@ h4 {
   display: none;
 }
 
-
-/* Section Filtres */
+/*****  Section Filtres ******/
 .filtres {
   display: flex;
   justify-content:flex-start;
@@ -160,7 +158,7 @@ h4 {
   padding: 0.2rem;
 }
 
-/* Section message info  */
+/*****  Section message info ******/
 .infoMessage {
   display: flex;
   align-items: center;
@@ -178,7 +176,7 @@ h4 {
   font-size: 0.8rem;
 }
 
-/* section hébergements + les plus populaires */
+/*****  Section  hébergements + les plus populaires ******/
 .cartesHebergements {
   display: flex;
   margin: 0;
@@ -187,7 +185,7 @@ h4 {
   gap: 2rem;
 }
 
-/* section hébergements */
+/*** Partie Hébergements ***/
 .hebergement { 
   display: flex;
   flex-direction: column;
@@ -216,15 +214,19 @@ h4 {
   height: 14rem;
 }
 
+
 #headerHebergement {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2.1rem;
-  color: #0065fc;
 }
 .hebergement .carte .imageHebergement {
   display: flex;
+  width: 100%;
+}
+.hebergement .carte a {
+  text-decoration: none;
   width: 100%;
 }
  .hebergement .carte img {
@@ -244,12 +246,12 @@ h4 {
 .hebergement .carteInfo {
   display: flex;
   flex-direction: column;
-  flex-basis: 90%;
-  margin: 0;
+  padding-left: 1rem;
+  color: #000000;
 }
 
 
-/*Partie "les plus populaires"*/
+/*** Partie "les plus populaires" ***/
 .populaires {
   flex-basis: 33%;
   border-radius: 1.6rem;
@@ -277,29 +279,32 @@ h4 {
 .populaires .carte {
   display: flex;
   justify-content:flex-start;
-  flex-basis: 100%;
   box-shadow: 0 0 1rem #b4b1b1;
   background: #FFFFFF;
   border-radius: 1.3rem; 
   height: 10rem;
 }
-
+.populaires .carte a {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+}
 .populaires .carte img {
 display: flex;
 border: 0.25rem solid #FFFFFF;
 border-radius: 1.3rem 0 0 1.3rem;
-width: 39%;
+width: 40%;
 height: 10rem;
 object-fit: cover;
 }
 
 .populaires .carteInfo {
   display: flex;
-  flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 60%;
+  width: 55%;
   height: 10rem;
+  color: #000000;
 }
 
 .nomHebergement {
@@ -339,7 +344,7 @@ object-fit: cover;
   padding: 0 2rem;
 }
 
-/* Section Activités à Marseille */
+/***** Section Activités à Marseille ******/
 .activites {
   display: flex;
   flex-wrap: wrap;
@@ -354,11 +359,16 @@ object-fit: cover;
   box-shadow: 0 0 1rem #b4b1b1;
   border-radius: 1.25rem;
 }
+
+.activites .activite a {
+  text-decoration: none;
+  color: #000000;
+}
+
 #headerActivites {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 rem;
 }
 
 .activite .imageActivite {
@@ -366,10 +376,11 @@ object-fit: cover;
   border: 5px solid #FFFFFF;
   border-radius: 1.25rem 1.25rem 0 0;
   height: 23rem;
+  width: 100%;
   object-fit:cover;
 }
 
-/* Section Footer */
+/***** Section Footer ******/
 .liensFooter {
   display: flex;
   flex-direction: row;
@@ -399,13 +410,13 @@ object-fit: cover;
 
 /*********************************************/
 /*taille écran tablette (>=768px et <=992px) */
-
+/*********************************************/
 @media screen and (max-width:992px) {
   /*section navigation*/
   .navMenu {
     border: 1px solid red;
   }
-     
+       
   /*section Filtres */
   .filtres {
     gap: 0.8rem;
@@ -472,7 +483,7 @@ object-fit: cover;
 }
 /******************************************/
 /*taille écran mobile (inférieur à 768px) */
-
+/******************************************/
 @media screen and (max-width:768px) {
   .body{
     margin: 0;
@@ -498,7 +509,10 @@ object-fit: cover;
     align-items: center;
     justify-content: center;
   }
-
+  .navMenu a:hover {
+    border-bottom: 2px solid #0065FC;
+    border-top: transparent;
+  }
   /*section Filtres */
   .filtres {
     gap: 0.5rem;
