@@ -116,6 +116,7 @@ h4 {
   padding:14px 16px;
 }
 
+/* Icone recherche */
 .texteIconeRecherche{
   font-weight: 700;
   font-size: 1.1rem;
@@ -538,7 +539,7 @@ object-fit: cover;
   .filtres {
     gap: 0.5rem;
   }
-
+ 
   /*section recherche */
   .recherche, .intro, .infoMessage, .filtres, .activites, .activites, #headerActivites {
     padding: 0 1.2rem;
