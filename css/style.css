@@ -52,9 +52,9 @@ h4 {
 /* liens du menu */
 .navMenu ul {
   display: flex;
-  justify-content: center;
   list-style: none; 
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .navMenu a {
@@ -347,7 +347,7 @@ object-fit: cover;
   color: #F2F2F2;
 }
 #afficherPlus {
-  padding: 0 1.2rem;
+  padding: 1.2rem;
 }
 
 /***** Section Activités à Marseille ******/
@@ -512,11 +512,7 @@ object-fit: cover;
     flex-direction: column;
   }
 
-  .liensNavigation {
-    width: 100%;
-  }
-
-  .navMenu ul {
+   .navMenu ul {
     padding: 0;
     width: 100%;
   }
@@ -533,6 +529,7 @@ object-fit: cover;
   .navMenu a:hover {
     border-bottom: 2px solid #0065FC;
     border-top: transparent;
+    padding-bottom: 14px; /* supprime le décalage vdu lien vers le haut */
   }
 
   /*section Filtres */
