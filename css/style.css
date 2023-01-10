@@ -44,7 +44,6 @@ section {
   justify-content:space-between;
   align-items:center;
   flex-wrap: wrap; 
-  border:1px solid red;
 }
 
 /* logo Booki*/
@@ -90,7 +89,7 @@ section {
   justify-content: left;
   align-items: center;
   background: #FFFFFF;
-  width: 75%;
+  width: 100%;
   
 }
 /* icone localisation de la partie recherche */
@@ -447,9 +446,7 @@ object-fit: cover;
 /*taille écran tablette (>=768px et <=992px) */
 /*********************************************/
 @media screen and (max-width:992px) {
- .navMenu{
-  border: 1px solid black;
- }
+
   /*section recherche */
  
   .texteIconeRecherche {
@@ -536,7 +533,6 @@ object-fit: cover;
   .navMenu {
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
   }
 
    .navMenu ul {
