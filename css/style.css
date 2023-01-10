@@ -610,7 +610,7 @@ object-fit: cover;
     display: none;
   }
 
-  /* section activités à Marseille*/
+  /* section activités à Marseille */
   .activites {
     display: flex;
     flex-direction: column;
@@ -625,14 +625,13 @@ object-fit: cover;
     height: 10rem;
   }
 
-
   /* section footer */
   .liensFooter {
     display: flex;
     flex-direction: column;
     padding: 1.2rem;
   }
-
+  /* section footer */
   .colFooter p {
     font-weight: 700;
     font-size: 1.1rem;
