@@ -116,6 +116,11 @@ section {
   font-size: 1.1rem;
   color:#000000;
 }
+
+#rechLieu::placeholder {
+  font-weight: bold;
+  color:black;
+}
 /* bouton submit de la partie recherche */
 .recherche button {
   background: #0065FC;
