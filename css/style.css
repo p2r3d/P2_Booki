@@ -254,6 +254,8 @@ section {
 .hebergement .carte a {
   text-decoration: none;
   width: 100%;
+  color: #000000;
+  outline: 0;
 }
 
 .hebergement .carte img {
@@ -319,6 +321,7 @@ section {
 .populaires .carte a {
   display: flex;
   text-decoration: none;
+  outline:0;
   width: 100%;
 }
 .populaires .carte img {
@@ -397,6 +400,7 @@ object-fit: cover;
 .activites .activite a {
   text-decoration: none;
   color: #000000;
+  outline: 0;
 }
 
 #headerActivites {
@@ -451,20 +455,9 @@ object-fit: cover;
 /*taille écran tablette (>=768px et <=992px) */
 /*********************************************/
 @media screen and (max-width:992px) {
-
-  /*section recherche */
- 
-  .texteIconeRecherche {
-    display: none;
-  }
-
-  .fas.fa-search {
-    display: inline;
-  }
-
-  .recherche button {
-    padding: 0;
-  }
+.navMenu {
+  border : 1px solid red;
+}
 
   /*section Filtres */
     .filtres {
@@ -528,8 +521,16 @@ object-fit: cover;
 @media screen and (max-width:768px) {
   body {
     margin: 0 ;
+    
   }
 
+.recherche, .intro, .infoMessage, .filtres, .activites, .activites, #headerActivites {
+  padding: 0 1.2rem;
+}
+
+.navMenu {
+  border: 1px solid green;
+}
   /*section navigation */
   #logo {
     margin-top: 1rem;
@@ -565,16 +566,12 @@ object-fit: cover;
     width:100%
   }
 
-  /*section Filtres */
-  .filtres {
-    gap: 0.5rem;
-  }
- 
   /*section recherche */
-  .recherche, .intro, .infoMessage, .filtres, .activites, .activites, #headerActivites {
-    padding: 0 1.2rem;
-  }
+ .fas.fa-search {
+   display: inline;
+ }
 
+ 
   .texteIconeRecherche {
     display: none;
   }
@@ -583,6 +580,10 @@ object-fit: cover;
     padding: 0;
   }
   
+  /*section Filtres */
+  .filtres {
+    gap: 0.5rem;
+  }
   /* section hébergement */    
   .cartesHebergements {
     display: flex;
