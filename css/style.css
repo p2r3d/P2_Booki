@@ -157,8 +157,7 @@ section {
 }
 
 .headerFiltres {
-  display: flex;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
 .listeFiltres {
@@ -458,12 +457,11 @@ object-fit: cover;
 .navMenu {
   border : 1px solid red;
 }
-
-  /*section Filtres */
-    .filtres {
-      gap: 1rem;
-    }
-  /* section hébergement*/
+  /* section filtres */
+ .listeFiltres {
+  gap: 1rem;
+ }
+  /* section hébergement */
   .hebergement {
     width: 100%;
   }
@@ -582,13 +580,11 @@ object-fit: cover;
   
   /*section Filtres */
   .filtres {
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
+  
   /* section hébergement */    
-  .cartesHebergements {
-    display: flex;
-  }
-
   .hebergement {
     order: 1;     /*passe "les plus populaires" au-dessus de "hébergement" */
     background: #FFFFFF;
