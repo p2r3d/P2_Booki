@@ -454,9 +454,7 @@ object-fit: cover;
 /*taille écran tablette (>=768px et <=992px) */
 /*********************************************/
 @media screen and (max-width:992px) {
-.navMenu {
-  border : 1px solid red;
-}
+
   /* section filtres */
  .listeFiltres {
   gap: 1rem;
@@ -522,13 +520,10 @@ object-fit: cover;
     
   }
 
-.recherche, .intro, .infoMessage, .filtres, .activites, .activites, #headerActivites {
-  padding: 0 1.2rem;
-}
+  .recherche, .intro, .infoMessage, .filtres, .activites, .activites, #headerActivites {
+    padding: 0 1.2rem;
+  }
 
-.navMenu {
-  border: 1px solid green;
-}
   /*section navigation */
   #logo {
     margin-top: 1rem;
