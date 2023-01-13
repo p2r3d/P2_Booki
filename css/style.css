@@ -23,7 +23,6 @@ h3 {
 }
 
 h3 a {
-  text-decoration: none;
   font-weight: 700;
   font-size: 1.1rem;
   color: #000000;
@@ -37,6 +36,11 @@ h4 {
 
 section {
   margin: 1rem 0;
+}
+
+a, input {
+  outline: 0;
+  text-decoration: none;
 }
 /******* header ********/
 .navMenu {
@@ -104,7 +108,7 @@ section {
 
 /* choix du lieu de la partie recherche */
 .recherche input {
-  outline: 0;/*supprime l'encadré du choix du lieu*/
+  /*supprime l'encadré du choix du lieu*/
   height: 3rem;
   border: 1px solid #f2f2f2;
   color: #000000;
@@ -251,10 +255,8 @@ section {
 }
 
 .hebergement .carte a {
-  text-decoration: none;
   width: 100%;
   color: #000000;
-  outline: 0;
 }
 
 .hebergement .carte img {
@@ -319,8 +321,6 @@ section {
 
 .populaires .carte a {
   display: flex;
-  text-decoration: none;
-  outline:0;
   width: 100%;
 }
 .populaires .carte img {
@@ -397,9 +397,7 @@ object-fit: cover;
 }
 
 .activites .activite a {
-  text-decoration: none;
   color: #000000;
-  outline: 0;
 }
 
 #headerActivites {
@@ -442,7 +440,6 @@ object-fit: cover;
   padding: 0;
 }
 .colFooter a {
-  text-decoration: none;
   color: #000000;
 }
 .colFooter li {
