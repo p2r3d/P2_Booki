@@ -168,7 +168,7 @@ a, input {
 .listeFiltres {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .listeFiltres :hover {
@@ -212,7 +212,49 @@ a, input {
 .cartesHebergements {
   display: flex;
   justify-content: center;
-  gap:20px;
+  gap: 20px;
+}
+.carteInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.nomHebergement {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 0.89rem;
+  padding-top: 0.2rem;
+  margin: 0;
+}
+
+.tarifHebergement {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 0.89rem;
+  padding-top: 0.4rem;
+  margin: 0;
+}
+
+.fas.fa-star {
+  font-size: 0.60rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.etoileBleue {
+  display: flex;
+  flex-wrap: wrap;
+  color: #0065FC;
+}
+
+.etoileGrise {
+  display: flex;
+  flex-wrap: wrap;
+  color: #F2F2F2;
 }
 
 /*** Sous-section Hébergements ***/
@@ -228,7 +270,7 @@ a, input {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  gap: 20px;
+  gap: 19.5px;
   padding: 0 1.2rem;
 }
 
@@ -270,15 +312,11 @@ a, input {
 }
 
 .hebergement .carteInfo {
-  display: flex;
-  flex-direction: column;
   padding-left: 0.7rem;
-  color: #000000;
 }
-.hebergement .carte p {
-  display:flex;
-  justify-content: flex-start;
-  width: 100%;
+
+.hebergement .nomHebergement {
+  padding-top: 0rem;
 }
 
 /*** Sous-section "les + populaires" ***/
@@ -334,49 +372,9 @@ object-fit: cover;
 }
 
 .populaires .carteInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 60%;
-  height: 9rem;
-  color: #000000;
-}
-
-.nomHebergement {
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: 700;
-  font-size: 0.96rem;
   padding-top: 0.5rem;
-  margin:0;
 }
 
-.tarifHebergement {
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: 400;
-  font-size: 0.85rem;
-  padding-top: 0.4rem;
-  margin: 0;
-}
-
-.fas.fa-star {
-  font-size: 0.60rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-.etoileBleue {
-  display: flex;
-  flex-wrap: wrap;
-  color:#0065FC;
-  margin-top: 10px;
-}
-.etoileGrise {
-  display: flex;
-  flex-wrap: wrap;
-  color: #F2F2F2;
-}
 #afficherPlus {
   padding: 1.2rem;
 }
@@ -453,10 +451,6 @@ object-fit: cover;
 /*********************************************/
 @media screen and (max-width:992px) {
 
-  /* section filtres */
- .listeFiltres {
-  gap: 1rem;
- }
   /* section hébergement */
   .hebergement {
     width: 100%;
@@ -682,7 +676,7 @@ object-fit: cover;
     flex-direction: column;
     padding: 1.2rem;
   }
-  
+
   .colFooter p {
     font-weight: 700;
     font-size: 1.1rem;
