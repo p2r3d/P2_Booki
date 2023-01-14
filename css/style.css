@@ -94,7 +94,6 @@ a, input {
   align-items: center;
   background: #FFFFFF;
   width: 100%;
-  
 }
 /* icone localisation de la partie recherche */
 .recherche i {
@@ -514,16 +513,16 @@ object-fit: cover;
 @media screen and (max-width:768px) {
   body {
     margin: 0 ;
-    
   }
 
   .recherche, .intro, .infoMessage, .filtres, .activites, .activites, #headerActivites {
-    padding: 0 1.2rem;
+    padding: 0.1rem 1.2rem;
   }
 
   /*section navigation */
   #logo {
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .navMenu {
@@ -555,13 +554,14 @@ object-fit: cover;
   .liensNav {
     width:100%
   }
-
+/*partie intro */
+  .intro {
+  margin-top: 0;
+}
   /*section recherche */
  .fas.fa-search {
    display: inline;
  }
-
- 
   .texteIconeRecherche {
     display: none;
   }
@@ -569,13 +569,33 @@ object-fit: cover;
   .recherche button {
     padding: 0;
   }
-  
+
   /*section Filtres */
   .filtres {
-    flex-direction: column;
-    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .headerFiltres {
+    padding-left: 1rem;
+  }
+  .listeFiltres {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
+  .chaqueFiltre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width :45%;
+  }
+
+  .chaqueFiltre span {
+    font-size: 0.85rem;
+  }
+
   /* section hébergement */    
   .hebergement {
     order: 1;     /*passe "les plus populaires" au-dessus de "hébergement" */
