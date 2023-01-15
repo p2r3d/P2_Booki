@@ -309,7 +309,6 @@ a, input {
   justify-content: space-around;
   padding-left: 0.7rem;
   height:5.5rem;
-
 }
 
 /*** Sous-section "les + populaires" ***/
@@ -335,7 +334,7 @@ a, input {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
-  gap: 19px; 
+  gap: 2rem; 
   width: 100%;
   padding: 0 2.3rem;
 }
@@ -347,7 +346,8 @@ a, input {
   box-shadow: 0 0 1rem #b4b1b1;
   background: #FFFFFF;
   border-radius: 1.3rem; 
-  height: 9rem;
+  height: 9.5rem;
+  width: 100%;
 }
 
 .populaires .carte a {
@@ -359,7 +359,7 @@ display: flex;
 border: 0.25rem solid #FFFFFF;
 border-radius: 1.3rem 0 0 1.3rem;
 width: 40%;
-height: 9rem;
+height: 9.5rem;
 object-fit: cover;
 }
 
