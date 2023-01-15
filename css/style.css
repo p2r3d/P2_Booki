@@ -6,7 +6,7 @@
 }
 body {
   max-width: 1400px;
-  margin: 0.1rem 2rem;
+  margin: 0.1rem 3rem;
   background-color: #FFFFFF;
   align-items: center;
 }
@@ -212,7 +212,7 @@ a, input {
 .cartesHebergements {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2.5rem;
 }
 .carteInfo {
   display: flex;
@@ -225,7 +225,7 @@ a, input {
   display: flex;
   flex-wrap: wrap;
   font-weight: 700;
-  font-size: 0.89rem;
+  font-size: 1rem;
   padding-top: 0.2rem;
   margin: 0;
 }
@@ -234,7 +234,7 @@ a, input {
   display: flex;
   flex-wrap: wrap;
   font-weight: 400;
-  font-size: 0.89rem;
+  font-size: 1rem;
   padding-top: 0.4rem;
   margin: 0;
 }
@@ -247,13 +247,11 @@ a, input {
 
 .etoileBleue {
   display: flex;
-  flex-wrap: wrap;
   color: #0065FC;
 }
 
 .etoileGrise {
   display: flex;
-  flex-wrap: wrap;
   color: #F2F2F2;
 }
 
@@ -270,19 +268,19 @@ a, input {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  gap: 19.5px;
-  padding: 0 1.2rem;
+  gap: 20px;
+  padding: 0 2.5rem;
 }
 
 .hebergement .carte {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 31%;
+  width: 30%;
   background: #FFFFFF;
   box-shadow: 0 0 1rem #b4b1b1;
   border-radius: 1.3rem;
-  height: 13rem;
+  height: 14rem;
 }
 
 #headerHebergement {
@@ -290,11 +288,6 @@ a, input {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1.2rem 0 ;
-}
-
-.hebergement .carte .imageHebergement {
-  display: flex;
-  width: 100%;
 }
 
 .hebergement .carte a {
@@ -306,24 +299,24 @@ a, input {
   display: flex;
   border: 0.25rem solid #FFFFFF;
   border-radius: 1.3rem 1.3rem 0 0;
-  height: 8rem;
+  height: 8.5rem;
   width: 100%;
   object-fit: cover;
 }
 
 .hebergement .carteInfo {
+  display: flex;
+  justify-content: space-around;
   padding-left: 0.7rem;
-}
+  height:5.5rem;
 
-.hebergement .nomHebergement {
-  padding-top: 0rem;
 }
 
 /*** Sous-section "les + populaires" ***/
 .populaires {
   display: flex;
   flex-direction: column;
-  width:33%;
+  width:30%;
   border-radius: 1.6rem;
   background-color: #F2F2F2;
   padding-bottom: 20px;
@@ -342,9 +335,9 @@ a, input {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
-  gap: 20px; 
+  gap: 19px; 
   width: 100%;
-  padding: 0 1.2rem;
+  padding: 0 2.3rem;
 }
 
 /*conteneur d'une carte populaire*/
@@ -355,7 +348,6 @@ a, input {
   background: #FFFFFF;
   border-radius: 1.3rem; 
   height: 9rem;
-  width: 100%;
 }
 
 .populaires .carte a {
@@ -373,6 +365,7 @@ object-fit: cover;
 
 .populaires .carteInfo {
   padding-top: 0.5rem;
+  width:60%
 }
 
 #afficherPlus {
