@@ -87,7 +87,7 @@ a, input {
   margin-top: 0.4rem;
 }
 
-/*******  Section recherche ********/
+/*******  Partie recherche ********/
 .recherche {
   display: flex;
   flex-wrap: wrap;
@@ -207,7 +207,7 @@ a, input {
   font-size: 0.8rem;
 }
 
-/*******  Section  hébergements + les plus populaires ********/
+/*******  Partie  hébergements + les plus populaires ********/
 .cartesHebergements {
   display: flex;
   justify-content: center;
@@ -254,7 +254,7 @@ a, input {
   color: #F2F2F2;
 }
 
-/*** Sous-section Hébergements ***/
+/*** Section Hébergements ***/
 .hebergement { 
   display: flex;
   flex-direction: column;
@@ -312,7 +312,7 @@ a, input {
 .hebergement p {
   padding-left:0.5rem;
 }
-/*** Sous-section "les + populaires" ***/
+/*** Section "les + populaires" ***/
 .populaires {
   display: flex;
   flex-direction: column;
@@ -413,7 +413,7 @@ object-fit: cover;
   padding-left: 0.2rem;
 }
 
-/******* Section Footer ********/
+/******* Footer ********/
 .liensFooter {
   display: flex;
   flex-direction: row;
@@ -460,16 +460,14 @@ object-fit: cover;
     margin: 0;
   }
   .populaires .cartes {
-    display: flex;
-    justify-content:space-around;
-    gap: 1.5rem;
-    width: 100%;
-    padding-bottom: 1.2rem;
-  }
-  .populaires .carte {
-    width: 29%;
+    padding: 0 2.5rem;  
+    justify-content: space-between;
+    gap: 0rem;
   }
   
+  .populaires .carte {
+      width: 31%;
+    }
   /* section activités à Marseille*/
   .activites {
     padding: 0;
@@ -541,7 +539,7 @@ object-fit: cover;
   }
 
   .liensNav {
-    width:100%
+    width:100%;
   }
 
   /*Section intro */
@@ -624,25 +622,26 @@ object-fit: cover;
     font-size: 0.8rem;
   }
 
-  /* sous-section hébergement */    
+  /* section hébergement */    
   .hebergement {
     order: 1;     /*passe "les plus populaires" au-dessus de "hébergement" */
     background: #FFFFFF;
     margin-bottom: 2rem;
   }
   .hebergement .cartes {
-    padding:1.2rem;
+    padding: 0 1.2rem;
   }
   .hebergement .cartes .carte {
     width: 100%;
   }
 
-  /* sous-section populaires */
+  /* section populaires */
   .populaires {
     border-radius: 0; 
   }
   .populaires .cartes {
-  padding: 1.2rem;
+  padding: 0 1.2rem;
+  gap:1.2rem;
 }
   .populaires .cartes .carte {
     width: 100%;
