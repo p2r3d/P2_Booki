@@ -590,7 +590,7 @@ object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex:auto;
     width :47%;
     padding: 0.4rem 0.1rem;
   }
