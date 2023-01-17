@@ -535,7 +535,7 @@ object-fit: cover;
   .navMenu a:hover {
     border-bottom: 2px solid #0065FC;
     border-top: transparent;
-    padding-bottom: 14px; /* supprime le décalage vdu lien vers le haut */
+    padding-bottom: 14px; 
   }
 
   .liensNav {
