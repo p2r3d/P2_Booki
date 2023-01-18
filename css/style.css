@@ -451,6 +451,7 @@ object-fit: cover;
   .cartesHebergements {
     display: flex;
     flex-direction: column;
+    gap:1rem;
   }
   
    /* section populaires */
@@ -630,6 +631,7 @@ object-fit: cover;
     order: 1;     /*passe "les plus populaires" au-dessus de "hébergement" */
     background: #FFFFFF;
     margin-bottom: 2rem;
+    margin-top:0;
   }
   .hebergement .cartes {
     padding: 0 1.2rem;
