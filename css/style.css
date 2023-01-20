@@ -255,11 +255,10 @@ a {
 
 /*** Section Hébergements ***/
 .hebergement { 
-  display: flex;
-  flex-direction: column;
   width:67%;
   border-radius: 1.6rem;
   background-color: #F2F2F2;
+  padding-top: 1rem;
 }
 .hebergement .cartes {
   display: flex;
@@ -319,6 +318,8 @@ a {
   border-radius: 1.6rem;
   background-color: #F2F2F2;
   padding-bottom: 20px;
+  padding-top: 1rem;
+  padding: 1rem 0 1.5rem 0;
 }
 
 #headerPopulaires {
@@ -551,7 +552,7 @@ object-fit: cover;
   }
 
   /*Section intro */
-  .intro {
+  .intro, h1 {
   margin-top: 0;
 }
   /*section recherche */
@@ -613,17 +614,13 @@ object-fit: cover;
 /* partie info */
   .infoMessage {
     display: flex;
-    align-items:baseline;
+    align-items:baseline; /*aligne icone et texte*/
+    padding-bottom: 1rem;
   }
 
   .infoMessage i {
     border: 1px solid #D9D9D9;
     border-radius: 50%;
-    height: 1.5rem;
-    width: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #0065FC;
     font-size: 0.8rem;
   }
@@ -632,7 +629,7 @@ object-fit: cover;
   .hebergement {
     order: 1;     /*passe "les plus populaires" au-dessus de "hébergement" */
     background: #FFFFFF;
-    margin-bottom: 2rem;
+    margin: 0;
     margin-top:0;
   }
   .hebergement .cartes {
@@ -645,6 +642,7 @@ object-fit: cover;
   /* section populaires */
   .populaires {
     border-radius: 0; 
+    padding :0 0 1.5rem 0;
   }
   .populaires .cartes {
   padding: 0 1.2rem;
