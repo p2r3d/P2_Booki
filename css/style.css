@@ -121,7 +121,8 @@ a {
 
 #rechLieu::placeholder {
   font-weight: bold;
-  color:black;
+  color:#000000;
+  opacity: 1;
 }
 /* bouton submit de la partie recherche */
 .recherche button {
