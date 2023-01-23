@@ -345,7 +345,7 @@ a {
 .populaires .carte {
   display: flex;
   justify-content:center;
-  box-shadow: 0 4px 20px #b4b1b1;
+  box-shadow: 0 4px 20px #d9d9d9;
   background: #FFFFFF;
   border-radius: 1.3rem; 
   height: 9.5rem;
