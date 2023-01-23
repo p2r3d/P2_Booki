@@ -1,13 +1,13 @@
 /******* Général ********/
 *{
-  font-family: "Raleway", "sans-serif";
-  font-size: 16px;
   box-sizing: border-box;
 }
 body {
   max-width: 1400px;
   margin: 0.1rem 3rem;
   background-color: #FFFFFF;
+  font-family: "Raleway", "sans-serif";
+  font-size: 16px;
 }
 
 h1 {
@@ -275,7 +275,7 @@ a {
   flex-wrap: wrap;
   width: 31%;
   background: #FFFFFF;
-  box-shadow: 0 0 1rem #b4b1b1;
+  box-shadow: 0 4px 20px #d9d9d9;
   border-radius: 1.3rem;
   height: 14rem;
 }
@@ -345,7 +345,7 @@ a {
 .populaires .carte {
   display: flex;
   justify-content:center;
-  box-shadow: 0 0 1rem #b4b1b1;
+  box-shadow: 0 4px 20px #b4b1b1;
   background: #FFFFFF;
   border-radius: 1.3rem; 
   height: 9.5rem;
@@ -384,7 +384,7 @@ object-fit: cover;
 .activites .activite {
   display: flex;
   width: 22%;
-  box-shadow: 0 0 1rem #b4b1b1;
+  box-shadow: 0px 5px 10px #d9d9d9;  
   border-radius: 1.25rem;
 }
 
