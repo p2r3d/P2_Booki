@@ -126,6 +126,9 @@ a {
 }
 /* bouton submit de la partie recherche */
 .recherche button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #0065FC;
   border: 1px solid #0065FC;
   color: #FFFFFF;
