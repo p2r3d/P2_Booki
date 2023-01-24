@@ -99,6 +99,9 @@ a {
 }
 /* icone localisation de la partie recherche */
 .recherche i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 15px 0 0 15px;
   border: 2px solid #f2f2f2;
   background-color: #F2F2F2;
@@ -560,7 +563,9 @@ object-fit: cover;
 }
   /*section recherche */
  .fas.fa-search {
-   display: inline;
+   display: flex;
+   align-items: center;
+   justify-content: center;
  }
 
  .recherche {
@@ -571,7 +576,13 @@ object-fit: cover;
   display:flex;
   flex: auto;
   width:30%;
-}
+  }
+
+  .recherche i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .texteIconeRecherche {
     display: none;
   }
