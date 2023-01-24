@@ -4,8 +4,9 @@
 }
 body {
   max-width: 1400px;
-  margin: 0.1rem 3rem;
+  padding: 0.1rem 3rem;
   background-color: #FFFFFF;
+  margin: 0 auto;
   font-family: "Raleway", "sans-serif";
   font-size: 16px;
 }
